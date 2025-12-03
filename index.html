@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CityBus Live</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="logo">CityBus Live</div>
+    <ul class="nav-links">
+      <li><a href="#" id="nav-home" class="nav-link active">Home</a></li>
+      <li><a href="#" id="nav-routes" class="nav-link">Routes</a></li>
+      <li><a href="#" id="nav-admin" class="nav-link">Admin Panel</a></li>
+    </ul>
+  </nav>
+  <main>
+    <!-- Home Section -->
+    <section id="section-home" class="main-section">
+      <div class="hero">
+        <h1>CityBus Live</h1>
+        <p class="tagline">Real-time bus routes, schedules, and crowd-sourced updates.</p>
+        <button class="primary-btn" id="btn-view-routes">View Routes</button>
+      </div>
+    </section>
+
+    <!-- Routes List -->
+    <section id="section-routes" class="main-section" style="display:none;">
+      <div class="routes-header">
+        <h2>All Bus Routes</h2>
+        <input type="text" id="route-search" class="input" placeholder="Search by route, start, or end..." />
+      </div>
+      <div id="routes-list" class="routes-list"></div>
+    </section>
+
+    <!-- Route Details -->
+    <section id="section-route-details" class="main-section" style="display:none;">
+      <div id="route-details-content"></div>
+    </section>
+
+    <!-- Admin Panel -->
+    <section id="section-admin" class="main-section" style="display:none;">
+      <div id="admin-dashboard"></div>
+      <div id="admin-routes"></div>
+      <div id="admin-stops"></div>
+      <div id="admin-buses"></div>
+    </section>
+  </main>
+  <footer>
+    <p>© 2025 CityBus Live – Demo project</p>
+  </footer>
+  <script src="app.js"></script>
+</body>
+</html>
